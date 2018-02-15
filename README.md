@@ -43,4 +43,4 @@ sao robertherber/template-redux-module
 
 ## License
 
-MIT &copy; [robert herber](github.com/robertherber)
+MIT &copy; [Robert Herber](https://github.com/robertherber)

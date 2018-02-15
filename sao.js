@@ -18,20 +18,20 @@ module.exports = {
   data: (answers) => {
     const moduleTitle = inflection.titleize(answers.name),
           moduleFolderName = inflection.dasherize(answers.name),
-          moduleCamelCase = inflection.camelize(answers.name.replace(' ', '_'), true),
-          folderPrefix = (answers.isNewFolder ? '' : 'modules/'),
-          folderPath = folderPrefix + moduleFolderName + '/';
+          moduleCamelCase = inflection.camelize(answers.name.replace(' ', '_'), true);
 
     data = {
       moduleTitle,
       moduleFolderName,
-      moduleCamelCase,
-      folderPath
+      moduleCamelCase
     }
 
     return data;
   },
   move(answers) {
+    const folderPrefix = (answers._.isNewFolder ? '' : 'modules/'),
+          folderPath = folderPrefix + data.moduleFolderName + '/';
+
     const suffixes = [
       'actions.js',
       'reducer.js',
@@ -44,7 +44,7 @@ module.exports = {
 
     const mapping = suffixes.reduce((obj, cur) => {
       const src = 'module/' + cur,
-            target = answers.folderPath + cur;
+            target = folderPath + cur;
 
       obj[src] = target;
 

@@ -32,7 +32,6 @@ module.exports = {
     return data;
   },
   move(answers) {
-    console.log('answers', answers)
     const suffixes = [
       'actions.js',
       'reducer.js',

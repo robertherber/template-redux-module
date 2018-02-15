@@ -13,7 +13,8 @@
     "template"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "ava ./tests/index.js",
+    "prepublish": "npm test"
   },
   "dependencies": {
     "inflection": "^1.12.0",

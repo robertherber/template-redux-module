@@ -2,16 +2,23 @@
 
 > SAO template to generate a Redux Module
 
-Use it to generate a base redux module in your underlying `modules/` folder. Use the second parameter to specify another folder than `modules`.
+[SAO](https://github.com/egoist/sao) is a scaffolding tool.
 
-The template will generate a folder with the following example files:
-* actions.js
-* reducer.js
-* selectors.js
+Use this SAO template to generate one new redux module in your project. This is not meant to set up the base structure - but rather add new modules adhering to the structure that's described below.
 
-It will also generate a `__tests__` folder with corresponding files and example tests.
+The template will generate a folder with the following files:
+* `modules/<your module name>/actions.js`
+* `modules/<your module name>/reducer.js`
+* `modules/<your module name>/selectors.js`
 
-Obviously this is an opinionated Redux structure and is meant as such. For me I find it easy to work with - and it scales well in bigger projects. Do feel free to contribute your thoughts on how to improve this template.
+It will also generate a `__tests__` folder with corresponding files and example tests:
+* `modules/<your module name>/__tests__/actions.js`
+* `modules/<your module name>/__tests__/reducer.js`
+* `modules/<your module name>/__tests__/selectors.js`
+
+If you want to put your module at another relative path - use the second parameter to SAO to specify another folder (see Usage for examples).
+
+Obviously this is an opinionated Redux structure and is meant as such. For me I find it easy to work with - and I feel it scales well in bigger projects. Do feel free to contribute your thoughts on how to improve this template.
 
 ## Usage
 
@@ -39,6 +46,12 @@ sao redux-module redux-stuff/my-own-modules-folder
 
 ```bash
 sao robertherber/template-redux-module
+```
+
+or if you want to specify your own folder instead of 'modules/':
+
+```bash
+sao robertherber/template-redux-module redux-stuff/my-own-modules-folder
 ```
 
 ## License

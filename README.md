@@ -1,5 +1,7 @@
 # template-redux-module
 
+[![CircleCI](	https://img.shields.io/circleci/project/github/robertherber/template-redux-module.svg)](https://circleci.com/gh/robertherber/template-redux-module) ![NMPVersion](https://img.shields.io/npm/v/template-redux-module.svg)
+
 > SAO template to generate a Redux Module
 
 [SAO](https://github.com/egoist/sao) is a scaffolding tool.

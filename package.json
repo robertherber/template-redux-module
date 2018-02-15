@@ -1,0 +1,26 @@
+{
+  "name": "template-redux-module",
+  "version": "0.0.1",
+  "description": "SAO template to generate Redux Modules under an existing project",
+  "repository": {
+    "url": "robertherber/template-redux-module",
+    "type": "git"
+  },
+  "author": "robert herber <robert@herber.me> (github.com/robert herber)",
+  "license": "MIT",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "inflection": "^1.12.0",
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "sao": "^0.22.1"
+  }
+}
